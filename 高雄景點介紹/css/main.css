@@ -1,0 +1,122 @@
+body {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+span {
+  vertical-align: middle;
+}
+
+.bgi16to9 {
+  position: relative;
+  width: 100%;
+  padding-top: 40%;
+  background-image: url("/assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerContent {
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bannerTitle {
+  font-weight: bold;
+  color: white;
+  font-size: 80px;
+  letter-spacing: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .bannerTitle {
+    font-size: 32px;
+    letter-spacing: 8px;
+  }
+}
+
+.zoneSelector {
+  height: 48px;
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 3px white, 0 0 10px #6f42c1;
+          box-shadow: 0 0 3px white, 0 0 10px #6f42c1;
+  border-radius: 24px;
+  color: #6f42c1;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 0 20px;
+}
+
+.popularZone {
+  letter-spacing: 6px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background-color: white;
+}
+
+.popularZone li:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  letter-spacing: 7px;
+  font-weight: normal;
+  color: #6f42c1;
+  border-bottom: solid 5px;
+  -webkit-text-decoration: underline wavy #ffc107;
+          text-decoration: underline wavy #ffc107;
+  /* Safari */
+}
+
+.cardTop4to3 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75%;
+}
+
+.cardImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cardTitle {
+  position: absolute;
+  bottom: 20%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background-color: #fff;
+  padding: 8px 20px;
+  font-size: 18px;
+  line-height: 2;
+  border-radius: 0 38px 38px 0;
+  vertical-align: middle;
+  color: #6f42c1;
+}
+
+.card-text {
+  letter-spacing: 1.5px;
+}
+
+.card-text span {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination span {
+  color: #6f42c1;
+}
+
+footer {
+  color: white;
+  width: 100%;
+  height: 300px;
+  font-size: 200px;
+}

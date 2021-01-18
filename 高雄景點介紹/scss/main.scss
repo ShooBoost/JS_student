@@ -1,0 +1,123 @@
+$color-white: white;
+$color-main: #6f42c1;
+$color-yellow: #ffc107;
+
+body {
+    background-color: rgba(grey, 0.1);
+}
+
+span {
+    vertical-align:middle
+}
+
+.bgi16to9 {
+    position: relative;
+    // overflow: hidden;
+    width: 100%;
+    padding-top: 40%;
+    background-image: url('/assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bannerContent {
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bannerTitle {
+    font-weight: bold;
+    color: $color-white;
+    font-size: 80px;
+    letter-spacing: 20px;
+    // text-shadow: 0 0 3px white,0 0 10px $color-main
+}
+
+// Medium devices (tablets, 768px and up)
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .bannerTitle {
+        font-size: 32px;
+        letter-spacing: 8px;
+    }
+ }
+
+.zoneSelector {
+    height: 48px;
+    border-color: transparent;
+    box-shadow: 0 0 3px white,0 0 10px $color-main;
+    border-radius: 24px;
+    color: $color-main;
+    background-color: rgba($color-white, 0.95);
+    padding: 0 20px;
+}
+
+.popularZone {
+    letter-spacing: 6px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: $color-white;
+    li {
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(black, 0.3);
+        }
+    }
+}
+
+h3 {
+    letter-spacing: 7px;
+    font-weight: normal;
+    color: $color-main;
+    border-bottom: solid 5px;
+    text-decoration: underline wavy $color-yellow; /* Safari */  
+    
+}
+
+.cardTop4to3 {
+    position: relative;
+    overflow: hidden;
+    padding-top: 75%;
+}
+
+.cardImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    object-fit: cover;
+}
+
+.cardTitle {
+    position: absolute;
+    bottom: 20%;
+    transform: translateY(50%);
+    background-color: #fff;
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 2;
+    border-radius: 0 38px 38px 0;
+    vertical-align: middle;
+    color: $color-main;
+}
+
+.card-text {
+    span {
+        color:rgba(black, 0.3)
+    }
+    letter-spacing: 1.5px;
+}
+
+.pagination span {
+    color: $color-main;
+}
+
+footer {
+    color: $color-white;
+    width: 100%;
+    height: 300px;
+    font-size: 200px;
+}
