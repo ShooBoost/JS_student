@@ -10,7 +10,7 @@ span {
   position: relative;
   width: 100%;
   padding-top: 40%;
-  background-image: url("/assets/banner.png");
+  background-image: url("../assets/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
